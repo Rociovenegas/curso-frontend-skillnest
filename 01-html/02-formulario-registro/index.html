@@ -1,16 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario Registro</title>
 
     <link rel="stylesheet" href="./static/css/style.css">
 </head>
 
 <body>
 
+    <header>
+        <h1>Regístrate y adopta un Gatito!</h1>
+        <p> Registrate, responde las preguntas y veremos si cumpler con los requisitos para adoptar un pequeño felino.
+        </p>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <fieldset class="personal-info">
+                <legend>Formulario</legend>
+                <fieldset class="form-adress">
+                    <legend>Informacion Personal</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="phone">Celular:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="date-birth">Fecha de nacimiento:</label>
+                    <input type="date" id="date-birth" name="date-birth">
+
+
+                    <label for="street">Calle:</label>
+                    <input type="text" id="street" name="calle" required>
+
+                    <label for="number">Número:</label>
+                    <input type="text" id="number" name="numero" required>
+
+                    <label for="apartment">Depto./Casa (opcional):</label>
+                    <input type="text" id="apartment" name="depto">
+
+                    <label for="district">Comuna:</label>
+                    <input type="text" id="district" name="comuna" required>
+
+                    <label for="region">Región:</label>
+                    <input type="text" id="region" name="region" required>
+                </fieldset>
+                <fieldset class="adopter-profile">
+                    <legend>Perfil del Adoptante</legend>
+                    <label for="children">¿Tiene usted infantes menores de 14 años que vivan en el mismo lugar donde
+                        vivirá el gato? Cuántos? </label>
+                    <select id="children" name="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4 niños o más</option>
+                    </select>
+
+                    <label for="cats">¿Tiene usted gatos en el lugar donde llevará al gato? Cuántos? </label>
+                    <select id="cats" name="cats">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4 niños o más</option>
+                    </select>
+
+                    <label for="pets">¿Tiene usted otro tipo de mascotas al lugar donde llevará al gato? Cuales?
+                        Cuántos?</label>
+                    <textarea id="pets" name="pets"></textarea>
+
+                    <label for="patience"> Tiene usted tiempo/paciencia para educar a un gato? Ellos sufren mucho extres
+                        y el cambiode ambiente puede afectarles cambiando su comportamiendo habitual y generando
+                        acciones que pueden generar molestias como orinar fuera del arenero, llorar, entre
+                        otras.</label>
+                    <select id="patience" name="patience">
+                        <option value="0">Nada de paciencia</option>
+                        <option value="1">Poca paciencia</option>
+                        <option value="2">Normal</option>
+                        <option value="3">Bastante Paciencia</option>
+                        <option value="4">Mucha paciencia</option>
+                    </select>
+
+                    <input type="checkbox" id="close" name="close" value="close">
+                    <label for="close">Acepto instalar mallas de seguridad en balcones y ventanas en caso de vivir en un
+                        departamento, o crear un espacio seguro para que los animales no escapen si vivo en una casa. Me
+                        comprometo a que estos sean totalmente indoor (de interior).</label>
+
+                    <label for="comments">¿Hay algo más que debamos saber sobre tu hogar, estilo de vida o
+                        experiencia con animales? (Ej: planes de viaje, alergias, etc.)</label>
+                    <textarea id="comments" name="comments"></textarea>
+
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Declaración y Compromiso del Adoptante</legend>
+
+                    <p>Por favor, lea atentamente y marque la casilla para confirmar que entiende y acepta las
+                        siguientes condiciones en caso de adoptar uno de nuestros amigos felinos:</p>
+
+                    <ul>
+                        <li><strong>Compromiso de Bienestar:</strong> Proporcionar un ambiente seguro, amoroso y
+                            libre de maltrato, cubriendo todas sus necesidades básicas (alimentación de calidad,
+                            agua fresca, refugio adecuado y afecto).</li>
+                        <li><strong>Atención Veterinaria:</strong> Garantizar la atención veterinaria necesaria,
+                            incluyendo vacunas al día, desparasitaciones periódicas y atención médica inmediata en
+                            caso de enfermedad.</li>
+                        <li><strong>Esterilización/Castración:</strong> El animal debe ser esterilizado/castrado en
+                            el tiempo estipulado (si aún no lo está), y proporcionaré el comprobante.</li>
+                        <li><strong>Condiciones de Vivienda:</strong> Las condiciones de mi vivienda cumplen con lo
+                            requerido para el bienestar del animal, incluyendo medidas de seguridad (mallas en
+                            ventanas/balcones, o espacio seguro).</li>
+                        <li><strong>Seguimiento:</strong> Autorizo a la organización a realizar visitas de
+                            seguimiento y/o solicitar actualizaciones periódicas.</li>
+                        <li><strong>Devolución:</strong> En caso de no poder continuar con la tenencia, me
+                            comprometo a Patitas Unidas y devolverlo a su cuidado.</li>
+                    </ul>
+
+                    <div class="form-group acceptance-checkbox">
+                        <input type="checkbox" id="acepto_terminos" name="acepto_terminos" required>
+                        <label for="acepto_terminos">Confirmo haber leído, entendido y aceptado todos los puntos de
+                            la <strong>Declaración y Compromiso del Adoptante</strong>.</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <input type="submit" value="Registrarse">
+        </form>
+    </main>
     <script src="./static/js/script.js"></script>
 </body>
 

@@ -1,0 +1,49 @@
+* {
+    justify-content: center;
+    font-size: x-large;
+    margin: 2vh auto;
+}
+
+main {
+    min-width: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto;
+
+}
+
+button {
+    display: block;
+}
+
+
+
+main button:nth-child(1) {
+    background-color: #CCCCCC;
+    border-color: #333333;
+    border-radius: 30px;
+    padding: 1% 4%;
+    height: 7vh;
+    width: 21vw;
+
+}
+
+main button:nth-child(2) {
+    background-color: #FF6600;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    height: 7vh;
+    width: 7vw;
+
+}
+
+main button:nth-child(3) {
+    background-color: #0099FF;
+    border: none;
+    color: #FFFFFF;
+    height: 7vh;
+    width: 21vw;
+    box-shadow: 15px 15px 25px 0px #999999;
+}

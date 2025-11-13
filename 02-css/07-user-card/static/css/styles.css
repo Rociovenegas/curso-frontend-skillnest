@@ -1,3 +1,76 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+
+
 }
+
+/* body{
+  width: 100%;
+  height: 100vh;
+
+} */
+
+
+
+/* Alinea el contenido, define el tamaño y se definen colores */
+.user-card-container {
+
+    color: #333639;
+    border-radius: 10px;
+    margin: 100px 100px;
+    padding: 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    box-shadow: 0 0 10px #4b5054;
+    background: linear-gradient(
+    to bottom,
+    #00BCD4 0%,
+    #00BCD4 20%,
+    #FFFFFF  20%,
+    #FFFFFF  100%
+  );
+}
+
+/* Define tamaño de imagen, recorta y crear un circulo*/
+img {
+    max-height: 300px;
+    clip-path: circle();
+}
+
+h2 {
+    font-weight: 500;
+}
+
+/* Elimina la sangria y puntitos de la lista*/
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    padding: 0 3px;
+}
+
+/* Eliminar padding izquierdo para que se alinee de forma vertical con el resto de los elementos */
+ul>li:first-child {
+    padding-left: 0;
+}
+
+.user-card-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-card-footer > button{
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+

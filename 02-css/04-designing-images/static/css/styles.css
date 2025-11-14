@@ -43,13 +43,12 @@ img {
 /* Galería de imágenes */
 
 .container {
-    display: block;
+    display: flex;
     flex-direction: column;
     width: 100%;
 }
 
 .main {
-    display: grid;
     background-color: deeppink;
 }
 

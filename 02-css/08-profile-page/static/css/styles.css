@@ -1,3 +1,7 @@
+/* ===================================
+   RESET 
+   =================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,24 +9,40 @@
     color: var(--color-font);
 }
 
-/* Variables globales */
+
+/* ===================================
+   VARIABLES GLOBALES
+   =================================== */
 
 :root {
+    /* Colores principales */
     --color-fondo: #eeeeee;
     --color-secundario: #00bcd4;
     --color-principal: #ffffff;
-    --color-sombra: 4px 6px 12px rgba(0, 0, 0, 0.15);
+    --color-nav: #333333;
+
+    /* Colores de fuente */
     --color-font: #666666;
     --color-font-secundario: #333333;
     --color-font-terciario: #666555;
-    --color-boton: #f5f5f5;
     --color-font-nav: #ffffff;
-    --color-nav: #333333;
-    /* --color-font: #a50000; */
+
+    /* Colores de botones */
+    --color-boton: #f5f5f5;
+    --color-boton-1: #00bcd4;
+    --color-boton-2: #FF69B4;
+    --color-boton-3: #007bff;
+
+    /* Efectos de sombra */
+    --sombra-principal: 0 5px 8px rgba(0, 0, 0, 0.08),
+        4px 2px 8px rgba(0, 0, 0, 0.06),
+        -4px 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 
-/* Estilos base */
+/* ===================================
+   ESTILOS BASE
+   =================================== */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -33,13 +53,11 @@ body {
 
 }
 
+/* Contenedor por defecto */
 .container-style {
     background-color: var(--color-principal);
     border-radius: 15px;
-    box-shadow:
-        0 5px 8px rgba(0, 0, 0, 0.08),
-        4px 2px 8px rgba(0, 0, 0, 0.06),
-        -4px 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--sombra-principal);
     padding: 3%;
     margin-bottom: 2em;
 }
@@ -56,15 +74,13 @@ header {
     background-color: var(--color-nav);
     justify-content: space-between;
     align-items: center;
-    /* border: 3px solid #f800e8; */
-    /* position: fixed;
-    top: 0; */
 }
 
 h1 {
     color: var(--color-font-nav);
     font-size: 1.7em;
 }
+
 
 /* ===================================
    BARRA DE NAVEGACIÓN
@@ -90,11 +106,20 @@ nav ul li a {
     font-size: 1.3em;
 }
 
+nav ul li a:hover {
+    color: var(--color-secundario);
+}
+
+/* Botón de cerrar sesión */
 .btn {
     padding: 0.5em 1em;
     background-color: var(--color-secundario);
     border-radius: 5px;
     font-size: 1.em;
+}
+
+.btn:hover {
+    color: var(--color-font-secundario);
 }
 
 
@@ -109,22 +134,10 @@ main {
     flex-wrap: wrap;
     padding: 2% 4%;
     width: 100%;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
-/* ===================================
-   INFORMACION DE USUARIO
-   =================================== */
-
-button {
-    background-color: var(--color-boton);
-    border: none;
-    padding: 15px 30px;
-    font-size: 15px;
-    color: #000;
-    border-radius: 10px;
-
-}
+/* Tipografía General */
 
 h2 {
     color: var(--color-font-secundario);
@@ -133,6 +146,14 @@ h2 {
     margin: 0;
     padding: 0;
 
+}
+
+h3 {
+    color: var(--color-font-secundario);
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 p {
@@ -145,31 +166,35 @@ p>span {
 }
 
 
+/* ===================================
+   SECCIÓN DE INFORMACION DE USUARIO
+   =================================== */
+
+
 .user-info-secction {
     width: 57%;
     background-color: transparent;
 }
 
+/* Tarjeta del usuario */
 .user-card-container {
     width: 100%;
     display: block;
-    /* border: 2px solid #f80078; */
-    /* Gradiente: 20% superior cian, 80% inferior blanco (Fondo de dos colores) */
+    /* Gradiente: 22% superior cian, 80% inferior blanco (Fondo de dos colores) */
     background: linear-gradient(to bottom,
-            #00BCD4 0%,
-            #00BCD4 22%,
+            var(--color-secundario) 0%,
+            var(--color-secundario) 22%,
             #FFFFFF 22%,
             #FFFFFF 100%);
     padding: 8% 6%;
 }
 
-
-/* Foto de perfil */
+/* Contenedor de Foto de perfil */
 .profile-photo-container {
     height: 20%;
-
 }
 
+/* Foto de perfil */
 .profile-photo-container>img {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -180,14 +205,12 @@ p>span {
 }
 
 
-/* Sección de información del usuario */
+/* Cuerpo de Tarjeta del usuario */
 .user-card-body {
     min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* border: 2px solid #000000; */
-    /* border: 3px solid #a70600; */
 }
 
 .user-card-body span {
@@ -204,13 +227,18 @@ p>span {
 
 .edit-profile-btn>button {
     background-color: transparent;
-    color: #007BFF;
+    color: var(--color-boton-3);
+    border: none;
     padding: 0;
+}
+
+.edit-profile-btn>button:hover {
+    color: var(--color-boton-1);
 }
 
 
 /* ===================================
-   EDUCACIÓN
+   SECCIÓN DE EDUCACIÓN
    =================================== */
 
 .user-education-container {
@@ -221,17 +249,9 @@ p>span {
     justify-content: space-evenly;
 }
 
-h3 {
-    color: var(--color-font-secundario);
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0;
-    display: block;
-}
-
 
 /* ===================================
-   CONEXIONES
+   SECCIÓN DE CONEXIONES
    =================================== */
 
 .user-connections-secction {
@@ -269,7 +289,7 @@ h3 {
 }
 
 
-/* imagenes de solicitudes */
+/* Imágenes de solicitude */
 .connections-requests>img {
     border-radius: 20%;
     aspect-ratio: 1;
@@ -283,12 +303,18 @@ h3 {
 .connections-btn {
     border-radius: 50%;
     background-color: transparent;
-    color: #FF69B4;
-    border: 2.5px solid #FF69B4;
+    color: var(--color-boton-2);
+    border: 2.5px solid var(--color-boton-2);
     aspect-ratio: 1;
     padding: 0.8em;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-
 
 
 /* ===================================
@@ -316,7 +342,7 @@ h3 {
     padding: 0.6em 0;
 }
 
-/* imagenes de conexiones */
+/* Imágenes de conexiones */
 .connections-info>img {
     border-radius: 50%;
     aspect-ratio: 1;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="r.venegasrojas.06@gmail.com">
+    <title>Tarjeta de Usuario</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+
+    <link rel="stylesheet" href="./static/css/styles.css">
+
+    <!-- Google Fonts: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Perfil</h1>
+        <!-- Barra de navegación principal -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mi Perfil</a></li>
+                <li><a href="#">Encontrar Conexciones</a></li>
+                <li><a href="#" class="btn">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Información de Usuario -->
+        <section class="user-info-secction">
+            <!-- Contenedor de Tarjeta de usuario -->
+            <div class="container-style user-card-container ">
+                <!-- Foto de perfil -->
+                <div class="profile-photo-container">
+                    <img src="./static/images/jhoony.jpg" alt="Foto de perfil">
+                </div>
+                <!-- Contenido de la Tarjeta de usuario -->
+                <div class="user-card-body">
+                    <h2>Jhonn Mongo</h2>
+                    <p><span>Santiago, Chile </span>Catador de Churus | Experto en Control de Plagas | Salto de altura
+                    </p>
+                    <p>Apasionado por el pollito en cualquiera de sus formas, croquetas, asado entre otras. Su
+                        especialidad en control de plagas son las polillas las cuales le han ayudado en su
+                        pasatiempo de
+                        salto de altura</p>
+                </div>
+
+                <!-- Botón Editar Perfil-->
+                <div class="edit-profile-btn">
+                    <img src="./resources/icons/settings.svg" alt="icono">
+                    <button>Edit profile</button>
+                </div>
+            </div>
+
+            <!-- Información de Educación -->
+            <div class="user-education-container container-style">
+                <h3>Educación</h3>
+                <div class="user-info">
+                    <p>Coding Dojo - Bootcamp de Desarrollo Full Stack</p>
+                    <p>Dic 2019 - Mar 2020</p>
+                    <p>Triple cinturón negro en pollito</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conexiones -->
+        <section class="user-connections-secction">
+            <!-- Contenedor: Solicitudes de Conexión  -->
+            <div class="container-style add-connections-container">
+                <h3>Solicitudes de Conexión (2)</h3>
+                <div class="connections-requests">
+                    <img src="./static/images/mongi-03.jpg" alt="icono">
+                    <p>Mongi Mau</p>
+                    <button class="connections-btn">✓</button>
+                    <button class="connections-btn">X</button>
+                </div>
+                <div class="connections-requests">
+                    <img src="./static/images/gaby-06.jpg" alt="icono">
+                    <p>Gabriela María</p>
+                    <button class="connections-btn">✓</button>
+                    <button class="connections-btn">X</button>
+                </div>
+            </div>
+
+            <!-- Contenedor: Tus Conexiones  -->
+            <div class="container-style connections-container">
+                <h3>Tus Conexiones (500+)</h3>
+                <!-- Lista de Conexciones -->
+                <div class="connections-info">
+                    <img src="./static/images/tomi-02.jpg" alt="icono">
+                    <p>Tomioka Hikari</p>
+                </div>
+                <div class="connections-info">
+                    <img src="./static/images/gato-tricolor-curioso.jpg" alt="icono">
+                    <p>Elizabeth Bennet</p>
+                </div>
+                <div class="connections-info">
+                    <img src="./static/images/gatito-con-pared-monocromatica-detras-de-ella.jpg" alt="icono">
+                    <p>Fitzwilliam Darcy</p>
+                </div>
+                <div class="connections-info">
+                    <img src="./static/images/primer-disparo-vertical-de-un-lindo-gato-europeo-de-pelo-corto.jpg"
+                        alt="icono">
+                    <p>Dr Patitas</p>
+                </div>
+                <div class="connections-info">
+                    <img src="./static/images/gaby-07.jpg" alt="icono">
+                    <p>Lella Lombardi</p>
+                </div>
+                <div class="connections-info">
+                    <img src="./static/images/mc-gato.jpg" alt="icono">
+                    <p>McGato</p>
+                </div>
+                <div class="connections-info">
+                    <img src="./static/images/jhonny-03.jpg" alt="icono">
+                    <p>Mike M.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

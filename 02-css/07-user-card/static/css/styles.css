@@ -1,3 +1,7 @@
+/* ===================================
+   RESET 
+   =================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +10,28 @@
 }
 
 
-/* Variables globales */
+/* ===================================
+   VARIABLES GLOBALES
+   =================================== */
 
 :root {
-    --color-fondo: #EEEEEE;
-    --color-fondo-secundario: #00BCD4;
-    --color-contenedor: #FFFFFF;
-    --color-sombra: 4px 6px 12px rgba(0, 0, 0, 0.15);
+    /* Colores principales */
+    --color-secundario: #00bcd4;
+    --color-principal: #ffffff;
+
+    /* Colores de fuente */
     --color-font: #666666;
     --color-font-secundario: #333333;
     --color-font-terciario: #666555;
-    --color-boton: #F5F5F5;
-    /* --color-font: #a50000; */
 
+    /* Colores de botones */
+    --color-boton: #f5f5f5;
+    --color-boton-1: #00bcd4;
+
+    /* Efectos de sombra */
+    --sombra-principal: 0 5px 8px rgba(0, 0, 0, 0.08),
+        4px 2px 8px rgba(0, 0, 0, 0.06),
+        -4px 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 
@@ -26,99 +39,90 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-fondo);
+    background-color: var(--color-principal);
+    overflow: hidden;
 }
 
 main {
     display: flex;
     justify-content: center;
-    margin: 100px 0;
+    align-items: center;
+    height: 98vh;
 }
 
 button {
     background-color: var(--color-boton);
     border: none;
     padding: 15px 30px;
-    font-size: 25px;
+    font-size: 20px;
     color: #000;
     border-radius: 10px;
+    margin-top: 5%;
 
+}
+
+button:hover {
+    background-color: var(--color-boton-1);
 }
 
 h1 {
     color: var(--color-font-secundario);
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
     padding: 0;
-    height: 30%;
 }
 
 p {
-    font-size: 22px;
+    font-size: 21px;
 
 }
-
 
 /* Tarjeta de usuario */
 
 /* Contenedor de Tarjeta de usuario */
 .user-card-container {
-    height: 750px;
-    width: 930px;
-    padding: 80px 50px 100px 70px;
+    width: 57vw;
+    margin-top: 2vh;
+    height: 94vh;
+    padding: 3% 4%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* border: 3px solid #f8a100; */
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
     /* Gradiente: 20% superior cian, 80% inferior blanco (Fondo de dos colores) */
     background: linear-gradient(to bottom,
             #00BCD4 0%,
             #00BCD4 20%,
             #FFFFFF 20%,
-            #FFFFFF 100%); 
-    height: 750px;
-    width: 930px;
+            #FFFFFF 100%);
     border-radius: 20px;
+    box-shadow: var(--sombra-principal);
+
+
 }
 
 
 /* Foto de perfil */
-.profile-photo-container {
-    height: 40%;
-}
 
 .profile-photo-container>img {
     border-radius: 50%;
     aspect-ratio: 1;
     object-fit: cover;
-    position: relative;
-    width: 230px;
+    width: 200px;
     border: 4px solid #FFFFFF;
 }
 
 
 /* Sección de información del usuario */
 .user-card-body {
-    height: 60%;
+    height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content:  space-between;
-    padding: 24px 0;
-    /* border: 3px solid #a70600; */
+    justify-content: space-between;
 }
 
-
-.user-info {
-    display: grid;
-    /* border: 3px solid #00d636; */
-    height: 70%;
-    padding: 5px 0;
-
-}
-
-/* Estilo para el primer párrafo */
-.user-info p:first-child{
+.user-card-body p:first-of-type {
     color: var(--color-font-terciario);
     font-weight: 500;
 }
-

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="r.venegasrojas.06@gmail.com">
+    <title>Petlopedia</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+
+    <link rel="stylesheet" href="./static/css/styles.css">
+
+    <!-- Google Fonts: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav>
+            <h1>Petlopedia</h1>
+            <!-- barra de búsqueda -->
+            <form class="search-bar">
+                <input type="search" placeholder="Buscar mascotas">
+            </form>
+            <!-- Botón de Inicio de Sesión -->
+            <a href="#/login" class="login-btn card" id="login-btn">Iniciar sesión</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Mascotas -->
+        <section class="pet-card">
+            <!-- Tarjeta 1  -->
+            <div class="card">
+                <h2>Gato Atigrado</h2>
+                <p><span>sustantivo</span></p>
+                <p>Plural: Gatos Atrigados</p>
+                <p>Un gato con un pelaje distintivo que presenta rayas, puntitos o patrones en remolino, usualmente con
+                    una marca en forma de "M" en su frente</p>
+                <button class="like-btn">22 me gusta</button>
+            </div>
+            <!-- Tarjeta 2  -->
+            <div class="card">
+                <h2>Golden Retriever</h2>
+                <p><span>sustantivo</span></p>
+                <p>Plural: Gatos Atrigados</p>
+                <p>Una raza de perro amistosa, inteligente y devota, conocida Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Tempore praesentium voluptatibus provident distinctio nulla reiciendis.</p>
+                <button class="like-btn">42 me gusta</button>
+            </div>
+        </section>
+
+        <!-- Añadir definición -->
+        <div class="card add-definition">
+            <p>Petlopedia está definida por TI</p>
+            <button id="add-definition-btn">Agregar Definición</button>
+        </div>
+    </main>
+
+    <!-- script js -->
+    <script src="./static/js/script.js " defer></script>
+</body>
+
+</html>

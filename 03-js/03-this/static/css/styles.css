@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    padding: 10%;
+}
+
+#dojo {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+}
+
+button {
+    margin: 20px;
+    padding: 20px;
+}

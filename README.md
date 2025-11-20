@@ -25,7 +25,7 @@ Gracias a GitHub Pages es posible la visualización de estas actividades. A cont
 | # | Proyecto | Descripción | Demo |
 |---|----------|-------------|------|
 | 01 | Entrada Diccionario | Estructura básica de una entrada de diccionario con etiquetas semánticas | [Ver demo](https://rociovenegas.github.io/curso-frontend-skillnest/01-html/01-entrada-diccionario/) |
-| 02 | Formulario | Elementos de formulario y validación básica | [Ver demo](https://rociovenegas.github.io/curso-frontend-skillnest/01-html/03-formulario/) |
+| 02 | Formulario | Elementos de formulario y validación básica | [Ver demo](https://rociovenegas.github.io/curso-frontend-skillnest/01-html/02-formulario-registro/) |
 
 ### CSS
 
@@ -63,3 +63,7 @@ Gracias a GitHub Pages es posible la visualización de estas actividades. A cont
 
 * Todos los proyectos son independientes y pueden ejecutarse de forma individual
 * Las actividades están ordenadas según la secuencia del curso
+
+## Pruebas
+
+<a href="https://rociovenegas.github.io/curso-frontend-skillnest/" target="_blank">[Página Principal del Portafolio]</a>

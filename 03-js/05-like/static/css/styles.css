@@ -1,0 +1,240 @@
+/* ===================================
+   MOCKUP DE FONDO - GUÍA DE DISEÑO
+   =================================== */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('../../resources/mockups/mockup-01.png'); */
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+
+/* ===================================
+   RESET 
+   =================================== */
+
+*,
+header,
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===================================
+   VARIABLES GLOBALES
+   =================================== */
+
+:root {
+    /* Colores principales */
+    --color-background-main: #ffffff;
+    --color-secondary: #000000;
+    --color-nav: #000000;
+    --color-background-card: #f4f4f4;
+
+    /* Colores de fuente */
+    --color-font-main: #111111;
+    --color-font-secondary: #ffffff;
+
+
+
+    /* Tamaño de la funte */
+    --font-size-h1: 2em;
+    --font-size-h2: 2.4em;
+    --font-size-h3: 1.9em;
+    --font-size-p: 1.2em;
+
+
+    /* Colores de botones */
+    --color-button-primary: #FFD700;
+
+    /* Color borde */
+    --color-borde: #111111;
+
+    /* Efectos de sombra */
+    --shadow-main: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+
+
+/* ===================================
+   ESTILOS BASE
+   =================================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-background-main);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* ===================================
+   ENCABEZADO
+   =================================== */
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    color: var(--color-font-secondary);
+    font-size: var(--font-size-h1);
+
+}
+
+/* ===================================
+   CUERPO DEL SITIO WEB
+   =================================== */
+
+main {
+    min-height: 80vh;
+    margin: 3vh 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3em;
+
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    width: 100%;
+    display: flex;
+    margin: 1vh 0.2vw;
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+p {
+    font-size: var(--font-size-p);
+
+}
+
+/* ===================================
+    TARJETA DE USUARIO
+   =================================== */
+
+/* Clase creada para poder posicionar Tarjeta de usuario */
+.perfil {
+    flex: 1.4;
+    margin: 0 0.5vw;
+    height: 80vh;
+    display: flex;
+}
+
+/* Estilos Tarjeta de usuario */
+.perfil .card {
+    border: 2px solid var(--color-borde);
+    border-radius: 4px;
+    height: 43vh;
+    width: 100%;
+    margin: 11.5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8vh 0 1vh 0;
+}
+
+/* Estilos imagen de Tarjeta de usuario */
+.perfil img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--color-secondary);
+
+}
+
+/* ===================================
+    POSTS
+   =================================== */
+
+/* Clase creada para poder posicionar los Posts */
+.feed {
+    flex: 6.5;
+    margin: 0 0.5vw 0 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Clases creada para poder posicionar los Posts */
+.feed .container-card {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para posts */
+
+.container-card .card {
+    border: 2px solid var(--color-borde);
+    flex: 1;
+    margin: 2vh 0 1vh 0;
+    padding: 4.5vh 1.5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--color-background-card);
+    border-radius: 4px;
+}
+
+.post {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 11vh;
+}
+
+.likes {
+    flex: 1;
+    display: flex;
+    height: 6vh;
+    justify-content: space-evenly;
+}
+
+.likes button {
+    padding: 1vh 1.5vw;
+    font-size: 1.2em;
+    font-weight: 900;
+    background-color: var(--color-button-primary);
+    border: none;
+    border-radius: 4px;
+}
+
+.likes>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}

@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+}
+
+
+
+/* ===================================
+   VARIABLES GLOBALES
+   =================================== */
+
+:root {
+    /* Colores principales */
+    --color-background-main: #ffffff;
+    --color-secondary: #000000;
+    --color-nav: #000000;
+    --color-background-card: #f4f4f4;
+
+    /* Colores de fuente */
+    --color-font-main: #ffffff;
+    --color-font-secondary: #ffffff;
+
+
+
+    /* Tamaño de la funte */
+    --font-size-h1: 2em;
+    --font-size-h2: 2.4em;
+    --font-size-h3: 1.9em;
+    --font-size-p: 1.2em;
+
+
+    /* Colores de botones */
+    --color-button-primary: #FFD700;
+
+    /* Color borde */
+    --color-borde: #111111;
+
+    /* Efectos de sombra */
+    --shadow-main: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+body,
+main,
+footer,
+header {
+    color: #ffffff;
+
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ea84c9;
+}
+
+header {
+    height: 20vh;
+    background-color: rgba(123, 70, 173, 0.2);
+    /* Blanco translúcido */
+    backdrop-filter: blur(15px);
+    /* opcional, queda más bonito */
+}
+
+main {
+    min-height: 60vh;
+}
+
+footer {
+    height: 20vh;
+}
+
+
+/* ===================================
+   ENCABEZADO
+   =================================== */
+
+header {
+    padding: 1.3% 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 500;
+
+}
+
+
+
+/* ===================================
+   CUERPO DEL SITIO WEB
+   =================================== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+
+/* Modulos */
+
+.modules {
+    display: flex;
+    justify-content: center;
+}
+
+.module {
+    margin: 5%;
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #ea84c9;
+    padding: 5% 1%;
+    border-radius: 50%;
+
+}
+
+.module {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow:
+        rgba(151, 48, 112, 0.25) 0 3px 5px -1px,
+        rgba(130, 30, 95, 0.20) 0 6px 10px 0,
+        rgba(100, 20, 70, 0.18) 0 1px 18px 0;
+    color: #ea84c9;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-size: 1em;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    padding: 2px 24px;
+    text-align: center;
+    /* Sirve para lograr animaciones coordinadas y fluidas en interfaces tipo Material Design. */
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    width: auto;
+    will-change: transform, opacity;
+    z-index: 0;
+}
+
+.module:hover {
+    transform: translate3d(0, -4px, 4px);
+}
+
+/* Proyectos */
+.cat {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #ea84c9;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    margin-right: 2%;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    border-radius: 15px;
+    padding: 1em 2em;
+    box-shadow:
+        rgba(151, 48, 112, 0.25) 0 3px 5px -1px,
+        rgba(130, 30, 95, 0.20) 0 6px 10px 0,
+        rgba(100, 20, 70, 0.18) 0 1px 18px 0;
+    margin: 1em;
+    min-width: 35vw;
+    min-height: 35vh;
+}
+
+
+.project-card h3 {
+    color: #555;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.project-card p {
+    color: #666;
+}
+
+.project-tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 12px;
+    padding: 0.2em 0.6em;
+    font-size: 1rem;
+    width: 6vw;
+}
+
+
+span {
+    color: #ea84c9;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ea84c9;
+}
+
+/* ===================================
+   FOOTER DEL SITIO WEB
+   =================================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style-type: none;
+}

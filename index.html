@@ -4,33 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./static/css/style.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet">
+    <title>Desarrollo Front-End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+        rel="stylesheet">
 </head>
 
 
 <body>
-    <h1>Hello World</h1>
-    <h2>This is a sample HTML file.</h2>
+    <header>
+        <h1>Portafolio</h1>
+        <h2>Curso de Desarrollo Front-End</h2>
+    </header>
 
-    <ol>
-        <li>Gatito</li>
-        <li>Gatito</li>
-        <li>Gatito</li>
-        <li>Gatito</li>
-    </ol>
+    <main>
+        <div class="modules">
+            <div class="module">Todos</div>
+            <div class="module">HTML</div>
+            <div class="module">CSS</div>
+            <div class="module">JavaScript</div>
+        </div>
+        <div class="projects">
+            <!-- HTML -->
+            <div class="project-card html">
+                <div class="test">
+                    <img src="./cat.png" alt="gatito" class="cat">
+                    <h3>Entrada Diccionario</h3>
+                </div>
+                <p>Estructura básica de una entrada de diccionario con etiquetas semánticas</p>
+                <span class="project-tech">HTML</span>
+                <a href="https://rociovenegas.github.io/curso-frontend-skillnest/01-html/01-entrada-diccionario/"
+                    target="_blank">Ver proyecto →</a>
+            </div>
 
-    <ul>
-        <li>Gatito 1</li>
-        <li>Gatito 2</li>
-        <li>Gatito 3</li>
-        <li>Gatito 4</li>
-    </ul>
+            <!-- CSS  -->
+            <div class="project-card css">
+                <img src="./cat.png" alt="gatito" class="cat">
+                <h3>Estilo Box Model</h3>
+                <p>Práctica con el modelo de caja y propiedades CSS</p>
+                <span class="project-tech">CSS</span>
+                <a href="https://rociovenegas.github.io/curso-frontend-skillnest/01-html/01-entrada-diccionario/"
+                    target="_blank">Ver proyecto →</a>
+            </div>
 
-    <img src="https://cdn.discordapp.com/attachments/695806628833919037/1433108878018744422/IMG_20251029_120217.jpg?ex=690b6726&is=690a15a6&hm=889f041d0b8c5a0cfcb7c89c97af783d68af287dfc4b6753caa0f5e71a949266&"
-        alt="Foto Gatito">
+            <!-- JavaScript -->
+            <div class="project-card html">
+                <img src="./cat.png" alt="gatito" class="cat">
+                <h3>Click</h3>
+                <p> Manejo de eventos click y respuesta dinámica</p>
+                <span class="project-tech">JavaScript</span>
+                <a href="https://rociovenegas.github.io/curso-frontend-skillnest/01-html/01-entrada-diccionario/"
+                    target="_blank">Ver proyecto →</a>
+            </div>
+        </div>
+    </main>
 
-    <script src="./static/js/script.js"></script>
+    <footer>
+        <p>Desarrollado por Rocío Venegas</p>
+        <p>
+            <a href="https://github.com/Rociovenegas">GitHub</a> |
+            <a href="https://github.com/Rociovenegas/curso-frontend-skillnest">Ver Repositorio</a>
+        </p>
+    </footer>
 </body>
 
 </html>

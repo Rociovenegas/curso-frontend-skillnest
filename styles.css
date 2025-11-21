@@ -165,8 +165,8 @@ main {
 
 /* Proyectos */
 .cat {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -187,7 +187,8 @@ main {
 .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;;
+    
     background: white;
     border-radius: 15px;
     padding: 1em 2em;
@@ -198,6 +199,10 @@ main {
     margin: 1em;
     min-width: 35vw;
     min-height: 35vh;
+}
+
+.project-card:hover {
+    transform: translate3d(0, -4px, 4px);
 }
 
 
@@ -230,7 +235,11 @@ span {
 .test {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.test-number {
+    font-size: 1.6em;
 }
 
 a {

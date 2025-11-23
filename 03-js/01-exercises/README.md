@@ -1,4 +1,4 @@
-# Exercises
+# Ejercicios de JavaScript
 
 ## Descripción
 

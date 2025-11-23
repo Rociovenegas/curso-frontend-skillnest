@@ -1,28 +1,8 @@
-/* ===================================
-   MOCKUP DE FONDO - GUÍA DE DISEÑO
-   =================================== */
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url('../../resources/mockups/mockup-01.png'); */
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    /* Ajusta este valor: 0.2 = muy transparente, 0.5 = más visible */
-    pointer-events: none;
-    z-index: 9999;
-    /* Encima de todo para guiarte */
-}
 
 
 /* ===================================
-   RESET 16.3 9.6 0.4
+   RESET
    =================================== */
 
 * {
@@ -34,41 +14,41 @@ body::before {
 
 
 /* ===================================
-   VARIABLES GLOBALES
+   GLOBAL VARIABLES
    =================================== */
 
 :root {
-    /* Colores principales */
-    --color-principal: #ffffff;
-    --color-secundario: #00bcd4;
+    /* Primary colors */
+    --color-primary: #ffffff;
+    --color-secondary: #00bcd4;
     --color-nav: #d3d3d3;
 
-    /* Colores de fuente */
+    /* Font colors */
     --color-font: #111111;
-    --color-font-secundario: #ffffff;
-    --color-font-terciario: #d3d3d3;
+    --color-font-secondary: #ffffff;
+    --color-font-tertiary: #d3d3d3;
 
 
-    /* Tamaño de la funte */
+    /* Font size */
     --size-font: 0.7em;
-    --size-font-secundario: 1.6em;
-    --size-font-terciario: 1em;
+    --size-font-secondary: 1.6em;
+    --size-font-tertiary: 1em;
 
 
-    /* Colores de botones */
-    --color-boton-1: #1e90ff;
-    --color-boton-2: #00a000;
-    --color-boton-3: #ffffcc;
-    --color-boton-4: #1ecfff;
-    --color-boton-5: #00f000;
-    --color-boton-6: #fff000;
+    /* Button colors */
+    --color-button-1: #1e90ff;
+    --color-button-2: #00a000;
+    --color-button-3: #ffffcc;
+    --color-button-4: #1ecfff;
+    --color-button-5: #00f000;
+    --color-button-6: #fff000;
 
 
-    /* Color borde */
-    --color-borde: #3a3a3a;
+    /* Border color */
+    --color-border: #3a3a3a;
 
-    /* Efectos de sombra */
-    --sombra-principal: 0 2px 4px rgba(0, 0, 0, 0.6);
+    /* Shadow effects */
+    --shadow-primary: 0 2px 4px rgba(0, 0, 0, 0.6);
 
 
 }
@@ -77,12 +57,12 @@ body::before {
 
 
 /* ===================================
-   ESTILOS BASE
+   BASE STYLES
    =================================== */
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-principal);
+    background-color: var(--color-primary);
     width: 85%;
     margin: 0 auto;
     padding: 0 auto;
@@ -90,12 +70,12 @@ body {
 
 }
 
-/* Contenedor por defecto */
+/* Default container */
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: var(--color-principal);
+    background-color: var(--color-primary);
     border: 2px solid var(--color-font);
     padding: 0.5em 1em;
     margin-top: 1em;
@@ -104,7 +84,7 @@ body {
 
 
 /* ===================================
-   ENCABEZADO
+   HEADER
    =================================== */
 
 nav {
@@ -121,7 +101,7 @@ h1 {
     font-size: var(--size-font-secundario);
 }
 
-/* barra de búsqueda  */
+/* Search bar */
 .search-bar>input {
     width: 70em;
     font-size: var(--size-font);
@@ -129,26 +109,26 @@ h1 {
 
 }
 
-/* Botón de Inicio de Sesión */
+/* Login button */
 .login-btn {
-    background-color: var(--color-boton-1);
-    color: var(--color-font-secundario);
+    background-color: var(--color-button-1);
+    color: var(--color-font-secondary);
     font-size: var(--size-font);
     text-decoration: none;
-    box-shadow: var(--sombra-principal);
+    box-shadow: var(--shadow-primary);
     padding: 0.7em 1.5em;
 }
 
 .login-btn:hover {
-    background-color: var(--color-boton-4);
+    background-color: var(--color-button-4);
 }
 
 /* ===================================
-   CUERPO DEL SITIO WEB
+   WEBSITE BODY
    =================================== */
 
 
-/* Distribución del contenido */
+/* Content distribution */
 main {
     display: flex;
     justify-content: space-between;
@@ -170,9 +150,9 @@ main {
     min-height: 26vh;
 }
 
-/* Estilo de las fuentes */
+/* Font styles */
 h2 {
-    font-size: var(--size-font-terciario);
+    font-size: var(--size-font-tertiary);
     padding-top: 0.5em;
 }
 
@@ -185,28 +165,28 @@ span {
 }
 
 
-/* Botones */
+/* Buttons */
 .like-btn {
-    background-color: var(--color-boton-3);
+    background-color: var(--color-button-3);
     border-radius: 0.3em;
-    box-shadow: var(--sombra-principal);
+    box-shadow: var(--shadow-primary);
     font-size: var(--size-font);
     padding: 0.3em;
 }
 
 .like-btn:hover {
-    background-color: var(--color-boton-6);
+    background-color: var(--color-button-6);
 }
 
 .add-definition button {
-    background-color: var(--color-boton-2);
+    background-color: var(--color-button-2);
     border-radius: 0.3em;
-    color: var(--color-font-secundario);
+    color: var(--color-font-secondary);
     font-size: var(--size-font);
     padding: 0.5em 5em;
-    box-shadow: var(--sombra-principal);
+    box-shadow: var(--shadow-primary);
 }
 
 .add-definition button:hover {
-    background-color: var(--color-boton-5);
+    background-color: var(--color-button-5);
 }

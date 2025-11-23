@@ -1,6 +1,13 @@
+/**
+ * JavaScript Array Challenges
+ * This script contains various array manipulation exercises to practice
+ * fundamental JavaScript concepts
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
-    //FizzBuzz
-    console.log("FizzBuzz: ");
+    // FizzBuzz Challenge: Print Fizz for multiples of 3, Buzz for multiples of 5,
+    // and FizzBuzz for multiples of both
+    console.log("FizzBuzz Challenge: ");
 
     for (let num = 1; num <= 100; num++) {
         if (num % 3 === 0 && num % 5 === 0) {
@@ -15,40 +22,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    //Siempre aburrido:
-    console.log("Siempre aburrido: ");
-    function siempreAburrido(arreglo) {
-        for (let i = 0; i < arreglo.length; i++) {
-            if (arreglo[i] === "ver TV") {
-                console.log("¡Entretenido!");
+    // Always Bored Challenge: Check if an activity is "watch TV"
+    console.log("Always Bored Challenge: ");
+    function alwaysBored(activities) {
+        for (let i = 0; i < activities.length; i++) {
+            if (activities[i] === "watch TV") {
+                console.log("Fun!");
             }
             else {
-                console.log("¡Estoy Aburrido!");
+                console.log("I'm Bored!");
             }
         }
     }
-    siempreAburrido(["cantar", "correr", "salir", "ver TV"]);
+    alwaysBored(["sing", "run", "go out", "watch TV"]);
 
-    // Número de corte:
-    // Escribe otra función que tome un arreglo y un número de corte. 
-    // Esta función debería devolver un nuevo arreglo que contenga solo los
-    // números que son más pequeños que este valor de corte.
+    // Cut Number Challenge:
+    // Write a function that takes an array and a cutoff number.
+    // This function should return a new array containing only the
+    // numbers that are smaller than this cutoff value.
 
-    console.log("Número de corte");
-    let numCut = (arr, cutNum) => {
-        let res = [];
+    console.log("Cut Number Challenge");
+    let cutNumber = (arr, cutNum) => {
+        let result = [];
         for (let num of arr) {
-            if (num < cutNum) res.push(num);
+            if (num < cutNum) result.push(num);
         }
-        return res;
+        return result;
     }
-    console.log(numCut([1, 2, 8, 4, 5, 7, 6], 4));
+    console.log(cutNumber([1, 2, 8, 4, 5, 7, 6], 4));
 
-    // Peor que el promedio: A veces, quieres saber qué tan por debajo de la media estás.
-    // Escribe una función que tome un arreglo de números y te diga cuántos de esos números
-    //  son menores que el promedio de todos los números.
+    // Below Average Challenge: 
+    // Write a function that takes an array of numbers and tells you 
+    // how many of those numbers are less than the average of all numbers.
 
-    console.log("Peor que el promedio: ");
+    console.log("Below Average Challenge: ");
     let numbersBelowAverage = (arr) => {
         let countNumbersBelowAverage = 0;
         let sum = arr.reduce((acc, current) => {
@@ -65,16 +72,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    // resultado esperado: (4) [1, 3, 4, 6]
+    // Expected result: (4) [1, 3, 4, 6]
     console.log(numbersBelowAverage([1, 20, 3, 4, 15, 6, 27]));
 
 
-    // Conteo de Pares: ¡Te apuesto que nunca te has preguntado cuántos 
-    // números pares hay en un arreglo! Esta será la primera vez. 
-    // Escribe una función llamada que tome un arreglo de 
-    // números como argumento y devuelva la cantidad de elementos pares que contiene.
+    // Even Numbers Count Challenge:
+    // Write a function that takes an array of numbers as an argument 
+    // and returns the count of even elements it contains.
 
-    console.log("Conteo de Pares: ");
+    console.log("Even Numbers Count: ");
     let evenNumbers = (arr) => {
         let count = 0;
         for (let num of arr) {
@@ -83,20 +89,21 @@ document.addEventListener("DOMContentLoaded", function () {
         return count;
     }
 
-    // Ejemplo de uso
+    // Usage example
     console.log(evenNumbers([1, 2, 3, 4, 5, 6, 10, 11, 13, 14, 16, 18]));
 
 
-    // Arreglo de Fibonacci: ¡Aquí viene un clásico! Los números de Fibonacci 
-    // son como una secuencia mágica que puedes encontrar en muchas partes. Escribe una 
-    // función que genere un arreglo de números de Fibonacci. ¡Recuerda decirle cuántos 
-    // números quieres en tu secuencia o de lo contrario será un loop infinito! Cada número
-    //  en la secuencia es la suma de los dos números anteriores.
+    // Fibonacci Array Challenge:
+    // This is a classic! Fibonacci numbers are like a magical sequence 
+    // you can find in many places. Write a function that generates an 
+    // array of Fibonacci numbers. Remember to tell it how many numbers 
+    // you want in your sequence or it will be an infinite loop!
+    // Each number in the sequence is the sum of the two previous numbers.
 
-    console.log("Arreglo de Fibonacci:");
+    console.log("Fibonacci Array:");
 
     let fibonacci = (num) => {
-        if (num < 0) return console.error("Número inválido, ingrese un número entero positivo.");
+        if (num < 0) return console.error("Invalid number, please enter a positive integer.");
         if (num === 0) return [0];
         if (num === 1) return [0, 1];
         let fibonacciArr = [0, 1];
@@ -107,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return fibonacciArr;
     }
 
-    // Ejemplo de uso: fibonacci(30): [ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
+    // Usage example: fibonacci(30): [ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34]
 
     console.log(fibonacci(10));
 

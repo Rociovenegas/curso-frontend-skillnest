@@ -1,25 +1,4 @@
 /* ===================================
-   MOCKUP DE FONDO - GUÍA DE DISEÑO
-   =================================== */
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url('../../resources/mockups/mockup-01.png'); */
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    pointer-events: none;
-    z-index: 9999;
-}
-
-
-/* ===================================
    RESET 
    =================================== */
 
@@ -34,36 +13,36 @@ h1 {
 
 
 /* ===================================
-   VARIABLES GLOBALES
+   GLOBAL VARIABLES
    =================================== */
 
 :root {
-    /* Colores principales */
+    /* Primary colors */
     --color-background-main: #ffffff;
     --color-secondary: #000000;
     --color-nav: #000000;
     --color-background-card: #f4f4f4;
 
-    /* Colores de fuente */
+    /* Font colors */
     --color-font-main: #111111;
     --color-font-secondary: #ffffff;
 
 
 
-    /* Tamaño de la funte */
+    /* Font size */
     --font-size-h1: 2em;
     --font-size-h2: 2.4em;
     --font-size-h3: 1.9em;
     --font-size-p: 1.2em;
 
 
-    /* Colores de botones */
+    /* Button colors */
     --color-button-primary: #FFD700;
 
-    /* Color borde */
+    /* Border color */
     --color-borde: #111111;
 
-    /* Efectos de sombra */
+    /* Shadow effects */
     --shadow-main: 0 2px 4px rgba(0, 0, 0, 0.6);
 
 }
@@ -71,7 +50,7 @@ h1 {
 
 
 /* ===================================
-   ESTILOS BASE
+   BASE STYLES
    =================================== */
 
 body {
@@ -85,7 +64,7 @@ img {
 }
 
 /* ===================================
-   ENCABEZADO
+   HEADER
    =================================== */
 
 header {
@@ -105,7 +84,7 @@ h1 {
 }
 
 /* ===================================
-   CUERPO DEL SITIO WEB
+   WEBSITE BODY
    =================================== */
 
 main {
@@ -135,10 +114,10 @@ p {
 }
 
 /* ===================================
-    TARJETA DE USUARIO
+    USER PROFILE CARD
    =================================== */
 
-/* Clase creada para poder posicionar Tarjeta de usuario */
+/* Class created to position the user profile card */
 .perfil {
     flex: 1.4;
     margin: 0 0.5vw;
@@ -146,7 +125,7 @@ p {
     display: flex;
 }
 
-/* Estilos Tarjeta de usuario */
+/* User profile card styles */
 .perfil .card {
     border: 2px solid var(--color-borde);
     border-radius: 4px;
@@ -160,7 +139,7 @@ p {
     padding: 8vh 0 1vh 0;
 }
 
-/* Estilos imagen de Tarjeta de usuario */
+/* User profile card image styles */
 .perfil img {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -176,7 +155,7 @@ p {
     POSTS
    =================================== */
 
-/* Clase creada para poder posicionar los Posts */
+/* Class created to position the Posts */
 .feed {
     flex: 6.5;
     margin: 0 0.5vw 0 0;
@@ -187,14 +166,14 @@ p {
 }
 
 
-/* Clases creada para poder posicionar los Posts */
+/* Class created to position the Posts */
 .feed .container-card {
     height: 70vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Estilos para posts */
+/* Post styles */
 
 .container-card .card {
     border: 2px solid var(--color-borde);

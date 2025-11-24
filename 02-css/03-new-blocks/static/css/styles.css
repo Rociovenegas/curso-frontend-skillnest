@@ -1,10 +1,10 @@
-/* Se utilizo durante el desarrollo para alinear todo... */
+/* Used during development to align everything... */
 /* body {
     background-color: #eaeaea;
     background-color: #c02929;
 } */
 
-/* Centra todo el contenido y define el ancho fijo */
+/* Centers all content and defines fixed width */
 .container {
     width: 950px;
     background-color: #eaeaea;
@@ -12,26 +12,25 @@
     padding: 12px 12px;
 }
 
-/* Representa una barra de navegacion */
+/* Represents a navigation bar */
 .top-nav {
     height: 150px;
     background-color: #ffcc00;
     margin: 10px 0;
 }
 
-/* Contenido Principal */
-/* display: inline-block permite que esté al lado de .side-nav */
-/* vertical-align: top alinea la parte superior con .side-nav */
+/* Main content area */
+/* display: inline-block allows it to sit next to .side-nav */
+/* vertical-align: top aligns the top with .side-nav */
 .main {
     display: inline-block;
     height: 400px;
     width: 700px;
     background-color: deeppink;
     vertical-align: top;
-    /* alinea al tope junto con .side-nav */
 }
 
-
+/* Side navigation */
 .side-nav {
     display: inline-block;
     height: 380px;
@@ -39,10 +38,9 @@
     background-color: #66ccff;
     margin: 10px;
     vertical-align: top;
-    /* alinea al tope junto con .main*/
 }
 
-/* inline-block permite que las 3 cajas estén lado a lado */
+/* inline-block allows the 3 boxes to be side by side */
 .sub-content {
     display: inline-block;
     height: 200px;
@@ -52,6 +50,7 @@
     margin: 10px;
 }
 
+/* Advertisement section */
 #advertisement {
     height: 120px;
     width: 660px;

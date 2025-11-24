@@ -1,10 +1,13 @@
-// Obtenemos todas las imágenes con la clase 'imagenEliminar'
-var imagenes = document.querySelectorAll(".imagenEliminar");
+// Get all images with the 'remove-image' class
+var images = document.querySelectorAll(".remove-image");
 
-let eliminarFotos = document.getElementById("eliminarFotos");
+// Get the remove photos button element
+let removePhotosBtn = document.getElementById("remove-photos-btn");
 
-eliminarFotos.addEventListener("click", () => {
-    imagenes.forEach(function (imagen) {
-        imagen.remove();
+// Add click event listener to remove all images
+removePhotosBtn.addEventListener("click", () => {
+    // Iterate through each image and remove it
+    images.forEach(function (image) {
+        image.remove();
     });
 });

@@ -1,4 +1,4 @@
-    body {
+body {
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -26,7 +26,7 @@
         margin-top: 2vh;
     }
 
-    label[for="user-description"] {
+    label[for="userDescription"] {
         margin-top: 2vh;
         display: flex;
     }

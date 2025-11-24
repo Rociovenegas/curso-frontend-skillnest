@@ -11,30 +11,30 @@
 
 
 /* ===================================
-   VARIABLES GLOBALES
+   GLOBAL VARIABLES
    =================================== */
 
 :root {
-    /* Colores principales */
-    --color-fondo: #eeeeee;
-    --color-secundario: #00bcd4;
-    --color-principal: #ffffff;
+    /* Primary colors */
+    --color-background: #eeeeee;
+    --color-secondary: #00bcd4;
+    --color-primary: #ffffff;
     --color-nav: #333333;
 
-    /* Colores de fuente */
+    /* Font colors */
     --color-font: #666666;
-    --color-font-secundario: #333333;
-    --color-font-terciario: #666555;
+    --color-font-secondary: #333333;
+    --color-font-tertiary: #666555;
     --color-font-nav: #ffffff;
 
-    /* Colores de botones */
-    --color-boton: #f5f5f5;
-    --color-boton-1: #00bcd4;
-    --color-boton-2: #FF69B4;
-    --color-boton-3: #007bff;
+    /* Button colors */
+    --color-button: #f5f5f5;
+    --color-button-1: #00bcd4;
+    --color-button-2: #FF69B4;
+    --color-button-3: #007bff;
 
-    /* Efectos de sombra */
-    --sombra-principal: 0 5px 8px rgba(0, 0, 0, 0.08),
+    /* Shadow effects */
+    --shadow-main: 0 5px 8px rgba(0, 0, 0, 0.08),
         4px 2px 8px rgba(0, 0, 0, 0.06),
         -4px 2px 8px rgba(0, 0, 0, 0.06);
 }
@@ -46,25 +46,24 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-principal);
+    background-color: var(--color-primary);
     width: 100%;
     margin: 0 auto;
     padding: 0 auto;
-
 }
 
-/* Contenedor por defecto */
+/* Default container */
 .container-style {
-    background-color: var(--color-principal);
+    background-color: var(--color-primary);
     border-radius: 15px;
-    box-shadow: var(--sombra-principal);
+    box-shadow: var(--shadow-main);
     padding: 3%;
     margin-bottom: 2em;
 }
 
 
 /* ===================================
-   ENCABEZADO
+   HEADER
    =================================== */
 
 header {
@@ -83,7 +82,7 @@ h1 {
 
 
 /* ===================================
-   BARRA DE NAVEGACIÓN
+   NAVIGATION BAR
    =================================== */
 
 nav ul {
@@ -110,23 +109,22 @@ nav ul li a:hover {
     color: var(--color-secundario);
 }
 
-/* Botón de cerrar sesión */
+/* Logout button */
 .btn {
     padding: 0.5em 1em;
-    background-color: var(--color-secundario);
+    background-color: var(--color-secondary);
     border-radius: 5px;
     font-size: 1.em;
 }
 
 .btn:hover {
-    color: var(--color-font-secundario);
+    color: var(--color-font-secondary);
 }
 
 
 /* ===================================
-   CUERPO DEL SITIO WEB
+   WEBSITE BODY
    =================================== */
-
 
 main {
     margin: 0;
@@ -137,19 +135,18 @@ main {
     justify-content: space-between;
 }
 
-/* Tipografía General */
+/* General Typography */
 
 h2 {
-    color: var(--color-font-secundario);
+    color: var(--color-font-secondary);
     font-size: 2.3em;
     font-weight: 500;
     margin: 0;
     padding: 0;
-
 }
 
 h3 {
-    color: var(--color-font-secundario);
+    color: var(--color-font-secondary);
     font-size: 1.5em;
     margin: 0;
     padding: 0;
@@ -158,43 +155,42 @@ h3 {
 
 p {
     font-size: 1.1em;
-    color: var(--color-font-secundario);
+    color: var(--color-font-secondary);
 }
 
 p>span {
-    color: var(--color-font-secundario);
+    color: var(--color-font-secondary);
 }
 
 
 /* ===================================
-   SECCIÓN DE INFORMACION DE USUARIO
+   USER INFORMATION SECTION
    =================================== */
 
-
-.user-info-secction {
+.user-info-section {
     width: 57%;
     background-color: transparent;
 }
 
-/* Tarjeta del usuario */
+/* User card */
 .user-card-container {
     width: 100%;
     display: block;
-    /* Gradiente: 22% superior cian, 80% inferior blanco (Fondo de dos colores) */
+    /* Gradient: 22% top cyan, 80% bottom white (Two-color background) */
     background: linear-gradient(to bottom,
-            var(--color-secundario) 0%,
-            var(--color-secundario) 22%,
+            var(--color-secondary) 0%,
+            var(--color-secondary) 22%,
             #FFFFFF 22%,
             #FFFFFF 100%);
     padding: 8% 6%;
 }
 
-/* Contenedor de Foto de perfil */
+/* Profile picture container */
 .profile-photo-container {
     height: 20%;
 }
 
-/* Foto de perfil */
+/* Profile picture */
 .profile-photo-container>img {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -205,7 +201,7 @@ p>span {
 }
 
 
-/* Cuerpo de Tarjeta del usuario */
+/* User card body */
 .user-card-body {
     min-height: 300px;
     display: flex;
@@ -218,7 +214,7 @@ p>span {
 }
 
 
-/* Botón editar perfil */
+/* Edit profile button */
 .edit-profile-btn {
     display: flex;
     align-items: center;
@@ -227,18 +223,18 @@ p>span {
 
 .edit-profile-btn>button {
     background-color: transparent;
-    color: var(--color-boton-3);
+    color: var(--color-button-3);
     border: none;
     padding: 0;
 }
 
 .edit-profile-btn>button:hover {
-    color: var(--color-boton-1);
+    color: var(--color-button-1);
 }
 
 
 /* ===================================
-   SECCIÓN DE EDUCACIÓN
+   EDUCATION SECTION
    =================================== */
 
 .user-education-container {
@@ -251,16 +247,16 @@ p>span {
 
 
 /* ===================================
-   SECCIÓN DE CONEXIONES
+   CONNECTIONS SECTION
    =================================== */
 
-.user-connections-secction {
+.user-connections-section {
     width: 33%;
 }
 
 
 /* ===================================
-   SOLICITUDES DE CONEXIONES
+   CONNECTION REQUESTS
    =================================== */
 
 .add-connections-container {
@@ -286,25 +282,26 @@ p>span {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
-/* Imágenes de solicitude */
+/* Request images */
 .connections-requests>img {
     border-radius: 20%;
     aspect-ratio: 1;
     object-fit: cover;
     position: relative;
     width: 50px;
-    border: 2px solid var(--color-secundario);
+    border: 2px solid var(--color-secondary);
 }
 
-/* Estilos de botones */
+/* Button styles */
 .connections-btn {
     border-radius: 50%;
     background-color: transparent;
-    color: var(--color-boton-2);
-    border: 2.5px solid var(--color-boton-2);
+    color: var(--color-button-2);
+    border: 2.5px solid var(--color-button-2);
     aspect-ratio: 1;
     padding: 0.8em;
     width: 45px;
@@ -318,7 +315,7 @@ p>span {
 
 
 /* ===================================
-   TUS CONEXIONES
+   YOUR CONNECTIONS
    =================================== */
 
 .connections-container h3 {
@@ -342,7 +339,7 @@ p>span {
     padding: 0.6em 0;
 }
 
-/* Imágenes de conexiones */
+/* Connection images */
 .connections-info>img {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -351,5 +348,4 @@ p>span {
     width: 50px;
     border: 1px solid var(--color-font);
     margin-right: 0.7em;
-
 }

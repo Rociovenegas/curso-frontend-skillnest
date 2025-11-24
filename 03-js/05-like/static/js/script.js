@@ -1,31 +1,31 @@
 const init = () => {
-    // Seleccionar cada post individualmente
-    const btnPost1 = document.querySelector("#like-post-1");
-    btnPost1.querySelector("button").addEventListener("click", () => addLike(btnPost1));
+    // Select each post individually
+    const likePost1 = document.querySelector("#like-post-1");
+    likePost1.querySelector("button").addEventListener("click", () => addLike(likePost1));
 
-    const btnPost2 = document.querySelector("#like-post-2");
-    btnPost2.querySelector("button").addEventListener("click", () => addLike(btnPost2));
+    const likePost2 = document.querySelector("#like-post-2");
+    likePost2.querySelector("button").addEventListener("click", () => addLike(likePost2));
 
-    const btnPost3 = document.querySelector("#like-post-3");
-    btnPost3.querySelector("button").addEventListener("click", () => addLike(btnPost3));
+    const likePost3 = document.querySelector("#like-post-3");
+    likePost3.querySelector("button").addEventListener("click", () => addLike(likePost3));
 }
 
-// Actualizar likes
+// Update likes count
 const addLike = (element) => {
-    // selecciona primer parrafo 
+    // Select the first paragraph
     const textElement = element.querySelector("p");
-    // Asegura que si no hay número, se use 0
-    let likes = parseInt(textElement.textContent) || 0;
-    likes++;
-    // Actualiza el texto con el nuevo número de likes
-    textElement.textContent = `${likes} like(s)`;
+    // Ensure that if there is no number, use 0
+    let likeCount = parseInt(textElement.textContent) || 0;
+    likeCount++;
+    // Update the text with the new likes number
+    textElement.textContent = `${likeCount} like(s)`;
 }
 
 const init2 = () => {
-    // Selecciona todos los post
+    // Select all posts
     const likePosts = document.querySelectorAll('.likes');
 
-    // Iterar sobre cada uno de los elementos 'likes'
+    // Iterate over each likes element
     likePosts.forEach(post => {
         const button = post.querySelector('button');
         button.addEventListener('click', () => addLike(post));

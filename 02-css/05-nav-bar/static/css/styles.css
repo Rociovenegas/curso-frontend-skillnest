@@ -1,3 +1,4 @@
+/* Body styles */
 body {
     width: 100%;
     margin: 0;
@@ -5,7 +6,7 @@ body {
 }
 
 
-
+/* Navbar styling */
 .navbar {
     background-color: crimson;
     color: #fff;
@@ -17,11 +18,14 @@ body {
     height: 80px;
 }
 
+/* Logo link styling */
 .logo a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
 }
+
+/* Navigation links styling */
 
 .nav-links {
     list-style-type: none;

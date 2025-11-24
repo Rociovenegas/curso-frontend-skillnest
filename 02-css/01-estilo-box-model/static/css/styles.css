@@ -6,6 +6,7 @@ h1 {
     text-align: center;
 }
 
+/* Main container: flexbox layout with full viewport height, centered content */
 main {
     min-width: 100vh;
     display: flex;
@@ -15,7 +16,7 @@ main {
 }
 
 
-
+/* Div styling: demonstrates box model with margins, padding, and sizing */
 div {
     margin: 2%;
     display: flex;
@@ -26,6 +27,7 @@ div {
 
 }
 
+/* Heading styling: white text, centered, small font */
 h2,
 h3,
 h4 {

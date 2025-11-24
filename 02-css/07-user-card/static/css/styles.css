@@ -11,38 +11,39 @@
 
 
 /* ===================================
-   VARIABLES GLOBALES
+   GLOBAL VARIABLES
    =================================== */
 
 :root {
-    /* Colores principales */
-    --color-secundario: #00bcd4;
-    --color-principal: #ffffff;
+    /* Primary colors */
+    --color-secondary: #00bcd4;
+    --color-primary: #ffffff;
 
-    /* Colores de fuente */
+    /* Font colors */
     --color-font: #666666;
-    --color-font-secundario: #333333;
-    --color-font-terciario: #666555;
+    --color-font-secondary: #333333;
+    --color-font-tertiary: #666555;
 
-    /* Colores de botones */
-    --color-boton: #f5f5f5;
-    --color-boton-1: #00bcd4;
+    /* Button colors */
+    --color-button: #f5f5f5;
+    --color-button-1: #00bcd4;
 
-    /* Efectos de sombra */
-    --sombra-principal: 0 5px 8px rgba(0, 0, 0, 0.08),
+    /* Shadow effects */
+    --shadow-main: 0 5px 8px rgba(0, 0, 0, 0.08),
         4px 2px 8px rgba(0, 0, 0, 0.06),
         -4px 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 
-/* Estilos base */
+/* Base styles */
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-principal);
+    background-color: var(--color-primary);
     overflow: hidden;
 }
 
+/* Main: Centers content vertically and horizontally */
 main {
     display: flex;
     justify-content: center;
@@ -50,8 +51,9 @@ main {
     height: 98vh;
 }
 
+/* Button: Edit Profile */
 button {
-    background-color: var(--color-boton);
+    background-color: var(--color-button);
     border: none;
     padding: 15px 30px;
     font-size: 20px;
@@ -61,25 +63,30 @@ button {
 
 }
 
+/* Button hover effect: Changes to secondary color */
 button:hover {
-    background-color: var(--color-boton-1);
+    background-color: var(--color-button-1);
 }
 
+
 h1 {
-    color: var(--color-font-secundario);
+    color: var(--color-font-secondary);
     font-size: 40px;
     margin: 0;
     padding: 0;
 }
+
 
 p {
     font-size: 21px;
 
 }
 
-/* Tarjeta de usuario */
+/* ===================================
+   USER CARD COMPONENT
+   =================================== */
 
-/* Contenedor de Tarjeta de usuario */
+/* User Card Container: */
 .user-card-container {
     width: 57vw;
     margin-top: 2vh;
@@ -90,22 +97,22 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    /* Gradiente: 20% superior cian, 80% inferior blanco (Fondo de dos colores) */
+    /* Gradient: 20% top cyan, 80% bottom white (Two-color background) */
     background: linear-gradient(to bottom,
             #00BCD4 0%,
             #00BCD4 20%,
             #FFFFFF 20%,
             #FFFFFF 100%);
     border-radius: 20px;
-    box-shadow: var(--sombra-principal);
-
-
+    box-shadow: var(--shadow-main);
 }
 
 
-/* Foto de perfil */
+/* Profile Photo */
 
+/* Profile Photo: Circular image with white border */
 .profile-photo-container>img {
+    /* Makes image circular */
     border-radius: 50%;
     aspect-ratio: 1;
     object-fit: cover;
@@ -114,7 +121,7 @@ p {
 }
 
 
-/* Sección de información del usuario */
+/* User information section */
 .user-card-body {
     height: 40%;
     display: flex;
@@ -122,7 +129,8 @@ p {
     justify-content: space-between;
 }
 
+/* First paragraph */
 .user-card-body p:first-of-type {
-    color: var(--color-font-terciario);
+    color: var(--color-font-tertiary);
     font-weight: 500;
 }

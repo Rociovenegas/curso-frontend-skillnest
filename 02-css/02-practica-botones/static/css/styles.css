@@ -1,9 +1,12 @@
+/* Reset */
 * {
     justify-content: center;
     font-size: x-large;
     margin: 2vh auto;
 }
 
+
+/* Main container: flexbox layout with centered content*/
 main {
     min-width: 100vh;
     justify-content: center;
